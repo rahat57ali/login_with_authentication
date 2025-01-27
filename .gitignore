@@ -13,6 +13,7 @@ node_modules/
 vendor/
 dist/
 build/
+config/
 
 # Ignore environment files
 .env
