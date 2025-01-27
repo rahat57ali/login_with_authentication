@@ -1,0 +1,35 @@
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore dependency directories
+node_modules/
+vendor/
+dist/
+build/
+
+# Ignore environment files
+.env
+.env.local
+
+# Ignore log files
+*.log
+
+# Ignore compiled files
+*.class
+*.pyc
+*.o
+*.so
+
+# Ignore cache directories
+.cache/
+
+# Ignore package manager files
+package-lock.json
+yarn.lock
