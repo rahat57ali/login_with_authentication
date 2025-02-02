@@ -68,7 +68,12 @@ router.post('/register', (req, res) => {
                         if(err) throw err;
                         // Set password to hashed
                         newUser.password = hash;
-                        
+                        // Save user
+                        newUser.save()
+                        .then(user => {
+                            res.redirect('/users/login')
+                        })
+                        .catch(err => console.log(err));
                 }))
             }
         });
